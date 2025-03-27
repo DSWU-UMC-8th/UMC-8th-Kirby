@@ -1,0 +1,127 @@
+/* 전체 배경 및 기본 설정 */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #eef2f3;
+  font-family: "Arial", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* 카드 컨테이너 */
+.todo-container {
+  background: white;
+  padding: 32px;
+  width: 500px;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  text-align: center;
+}
+
+/* 제목 */
+h1 {
+  font-size: 28px;
+  margin-bottom: 24px;
+}
+
+/* 입력창 + 버튼 */
+.input-box {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+#todo-input {
+  flex: 1;
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+#add-btn {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#add-btn:hover {
+  background-color: #219653;
+}
+
+/* 리스트 전체 컨테이너 */
+.list-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* 각각의 리스트 박스 */
+.todo-list-box,
+.done-list-box {
+  width: 48%;
+}
+
+/* 리스트 제목 */
+h2 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+/* 리스트 자체 */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* 항목 스타일 */
+.item {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  font-weight: bold;
+}
+
+/* 완료 버튼 */
+.complete-btn {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.complete-btn:hover {
+  background-color: #219653;
+}
+
+/* 삭제 버튼 */
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
