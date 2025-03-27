@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>YONG TODO</title>
+    <link rel="stylesheet" href="src/styles/style.css" />
+  </head>
+  <body>
+    <section class="todo-container">
+      <h1>DOHEE's TODO</h1>
+      <div class="input-box">
+        <input type="text" id="todo-input" placeholder="할 일 입력" />
+        <button id="add-btn">할 일 추가</button>
+      </div>
+      <div class="list-container">
+        <div class="todo-list-box">
+          <h3>할 일</h3>
+          <ul id="todo-list"></ul>
+        </div>
+        <div class="done-list-box">
+          <h3>완료</h3>
+          <ul id="done-list"></ul>
+        </div>
+      </div>
+    </section>
+    <script type="module" src="./dist/main.js"></script>
+  </body>
+</html>
