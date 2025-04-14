@@ -7,6 +7,6 @@ export interface TodoContextProps {
   todos: Todo[];
   dones: Todo[];
   addTodo: (text: string) => void;
-  completeTodo: (id: number) => void; // ✅ 이 줄 추가
+  completeTodo: (id: number) => void;
   deleteTodo: (id: number) => void;
 }
